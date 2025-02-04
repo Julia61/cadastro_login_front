@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#bde2c7] text-white " style="font-family: 'Sour Gummy', serif;">
+
+<header class="bg-[#6fa376] p-4 rounded-b-lg">
+    <div class="flex items-center ">
+        <span class="p-4"><img src="http://localhost:8082/images/avatar.png" alt="Imagem fofa" class="w-10 h-10 rounded-full"></span><p id="bemVindo" class="text-xl font-light tracking-wider text-white" style="text-shadow: 2px 1px 0px black;">Bem-vindo,<p></p><span th:text="${user.usuario}" class="ml-2 text-xl" style="text-shadow: 2px 1px 0px black;"></span>
+    </div>
+</header>
+
+<main class="p-6 bg-[#9AC4A5] w-2/4  max-w-4xl m-auto shadow-2xl m-auto mt-10 mb-10 rounded-xl" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.532);">
+    <h1 class="text-3xl font-bold mb-4" style="text-shadow: 2px 1px 0px black;">A Importância da Prática para o Aprendizado do Cérebro</h1>
+    <div class="mb-6 w-full flex flex-col sm:flex-row items-center">
+        <article class="bg-[#75a77e] shadow-md p-10 rounded-lg mb-4 w-full sm:w-1/2 max-w-3xl m-auto" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);">
+            <p class="text-black text-center">
+                Quando falamos sobre aprendizado e desenvolvimento cerebral, a prática é um dos fatores mais importantes. A repetição e o exercício contínuo de habilidades não apenas reforçam o que aprendemos, mas também promovem a plasticidade cerebral – a capacidade do cérebro de se adaptar e mudar ao longo do tempo.
+            </p>
+        </article>
+        <div class="sm:ml-auto">
+            <img src="http://localhost:8082/images/brain.png" alt="Imagem fofa" class="w-32 h-32 sm:w-60 sm:h-60 rounded-lg">
+        </div>
+    </div>
+
+    <div class="mb-6 items-center" >
+        <article class="bg-[#75a77e] shadow-2xl p-5 rounded-lg mb-10 sm:w-1/2 max-w-3xl m-auto" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);">
+            <h2 class="text-2xl font-semibold text-center bg-[#6fa376] rounded-md">Plasticidade Cerebral</h2>
+            <p class="text-black text-center">
+                A plasticidade cerebral, também conhecida como neuroplasticidade, refere-se à capacidade do cérebro de reorganizar suas conexões neuronais em resposta a novas experiências e aprendizados. Praticar habilidades, sejam elas cognitivas ou físicas, estimula a formação de novas sinapses (conexões entre neurônios), fortalecendo as redes neurais existentes. Isso torna a recuperação e o processamento da informação mais eficientes.
+            </p>
+        </article>
+        <article class="bg-[#75a77e] shadow-md p-5 rounded-lg mb-10 sm:w-1/2 max-w-3xl m-auto" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);">
+            <h2 class="text-2xl font-semibold text-center bg-[#6fa376] rounded-md">Reforço da Memória</h2>
+            <p class="text-black text-center">
+                A prática regular ajuda a consolidar a memória de longo prazo. Quando repetimos uma atividade ou revisamos o conteúdo aprendido, estamos essencialmente dizendo ao nosso cérebro que essa informação é importante. Como resultado, o cérebro reforça as vias neurais relacionadas a essa informação, facilitando sua recuperação futura.
+            </p>
+        </article>
+        <div class=" bg-cover bg-center rounded-lg mb-4 sm:w-1/2 m-auto"></div>
+
+        <article class="bg-[#75a77e] shadow-md p-5 rounded-lg mb-10 sm:w-1/2 max-w-3xl m-auto" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);">
+            <h2 class="text-2xl font-semibold text-center bg-[#6fa376] rounded-md">Melhoria das Habilidades</h2>
+            <p class="text-black text-center">
+                Além da consolidação da memória, a prática contribui significativamente para a melhoria das habilidades. Seja tocar um instrumento musical, praticar um esporte ou resolver problemas matemáticos, a repetição permite que o cérebro refine e aperfeiçoe as técnicas envolvidas. Isso se traduz em uma execução mais eficiente e precisa dessas habilidades.
+            </p>
+        </article>
+
+        <article class="bg-[#75a77e] shadow-md p-5 rounded-lg mb-10 sm:w-1/2 max-w-3xl m-auto" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);">
+            <h2 class="text-2xl font-semibold text-center bg-[#6fa376] rounded-md">Redução do Estresse e Aumento da Confiança</h2>
+            <p class="text-black text-center">
+                Praticar regularmente pode reduzir o estresse associado ao desempenho em atividades desafiadoras. Quanto mais familiarizados estamos com uma tarefa, menos ansiosos nos sentimos ao realizá-la. Além disso, a prática contínua aumenta a autoconfiança, pois vemos melhorias tangíveis em nossas habilidades ao longo do tempo.
+            </p>
+        </article>
+    </div>
+
+    <article class="bg-[#75a77e] shadow-md p-5 rounded-lg max-w-3xl m-auto" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);">
+        <p class="text-black text-center">
+            A prática não apenas faz a perfeição, mas também é fundamental para o aprendizado e desenvolvimento do cérebro. Ao envolver-se repetidamente em atividades cognitivas e físicas, estimulamos a plasticidade cerebral, fortalecemos a memória, melhoramos nossas habilidades e aumentamos nossa autoconfiança. Portanto, nunca subestime o poder da prática no processo de aprendizado.
+        </p>
+    </article>
+</main>
+
+<footer class="bg-[#6fa376]  p-4 text-center">
+    <p>Feito por Julia</p>
+</footer>
+
+</body>
+<script>
+    // Define o tempo para recarregar a página (1 minuto e meio em milissegundos)
+const tempoDeEspera = 90 * 1000; // 1 minuto e meio = 90 * 1000 milissegundos
+
+// Usa setTimeout para recarregar a página após o tempo especificado
+setTimeout(function() {
+  location.reload(); // Recarrega a página
+}, tempoDeEspera);
+
+
+
+</script>
+</html>
