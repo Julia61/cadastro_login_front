@@ -28,7 +28,7 @@ public class CreateUserService {
             var result = rt.postForObject(url, request, String.class);
             System.out.println(result);
         } catch (HttpClientErrorException ex) {
-            if (ex.getStatusCode() == HttpStatus.CONFLICT) { // 409 Conflict (e-mail já existe)
+            if (ex.getStatusCode() == HttpStatus.CONFLICT) {
                 throw new HttpClientErrorException(HttpStatus.CONFLICT, "E-mail já cadastrado.");
             } else {
                 throw ex; // Lança outras exceções
