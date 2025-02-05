@@ -11,16 +11,6 @@ public class Token {
     private String access_token;
     private List<String> roles;
     private Long expires_in;
-    private Date expirationDate;
-
-
-    public void setExpirationDate(Date expirationDate) {
-        this.expirationDate = expirationDate;
-    }
-
-    public Date getExpirationDate() {
-        return expirationDate;
-    }
 
 
 }

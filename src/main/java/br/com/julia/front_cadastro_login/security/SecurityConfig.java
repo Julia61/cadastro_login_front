@@ -26,7 +26,6 @@ public class SecurityConfig {
                     form.loginPage("/user/login");
                 });
 
-
         return http.build();
     }
 

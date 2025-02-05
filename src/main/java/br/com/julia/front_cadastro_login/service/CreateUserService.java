@@ -26,12 +26,12 @@ public class CreateUserService {
             var url = hostAPICadastroLogin.concat("/cadastro/usuario");
 
             var result = rt.postForObject(url, request, String.class);
-            System.out.println(result);
+
         } catch (HttpClientErrorException ex) {
             if (ex.getStatusCode() == HttpStatus.CONFLICT) {
                 throw new HttpClientErrorException(HttpStatus.CONFLICT, "E-mail já cadastrado.");
             } else {
-                throw ex; // Lança outras exceções
+                throw ex;
             }
         }
 

@@ -45,11 +45,11 @@ public class UserController {
         try {
             this.createUserService.execute(userCreate);
         } catch (HttpClientErrorException ex) {
-            // Adiciona a mensagem de erro ao modelo
+
             model.addAttribute("message_error", "Não foi possível concluir o cadastro. Tente novamente.");
-            // Adiciona o objeto userCreate de volta ao modelo para manter os dados preenchidos no formulário
+
             model.addAttribute("userCreate", userCreate);
-            return "register/registerUser"; // Retorna para a página de cadastro com a mensagem de erro
+            return "register/registerUser";
         }
         model.addAttribute("userCreate", userCreate);
         return "redirect:/user/login";
@@ -60,8 +60,6 @@ public class UserController {
         return "login/loginUser";
     }
 
-    //colocar a parte de erro
-    //fazer redole quando token expirado
     @PostMapping("/signIn")
     public String signIn(RedirectAttributes redirectAttributes,
                          HttpSession session,

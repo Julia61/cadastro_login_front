@@ -39,8 +39,6 @@ public class LoginUserService {
         result.setExpirationDate(expirationDate);
 
 
-        System.out.println(result);
-
         return result;
 
     }

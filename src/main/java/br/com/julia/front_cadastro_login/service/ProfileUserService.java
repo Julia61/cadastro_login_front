@@ -18,7 +18,6 @@ public class ProfileUserService {
     private String hostAPICadastroLogin;
 
     public ProfileUserDTO execute(String token) {
-        System.out.println("Token recebido no ProfileUserService: " + token); // Adicione este log
 
         RestTemplate rt = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
