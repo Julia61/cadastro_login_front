@@ -19,13 +19,13 @@ public class ProfileUserService {
 
     public ProfileUserDTO execute(String token) {
 
+
         RestTemplate rt = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
         headers.setBearerAuth(token);
 
         HttpEntity<Map<String, String>> request = new HttpEntity<>(headers);
         var url = hostAPICadastroLogin.concat("/cadastro/");
-
 
 
         try {

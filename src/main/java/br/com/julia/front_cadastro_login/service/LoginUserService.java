@@ -35,10 +35,6 @@ public class LoginUserService {
 
         var result = rt.postForObject(url,request, Token.class);
 
-        Date expirationDate = new Date(System.currentTimeMillis() + result.getExpires_in() * 1000);
-        result.setExpirationDate(expirationDate);
-
-
         return result;
 
     }
