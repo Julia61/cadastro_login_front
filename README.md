@@ -69,7 +69,7 @@ O Spring Security é responsável pela autenticação, garantindo que apenas usu
 #### 1. Clone este repositório:
 
  ```bash
-     git clone https://github.com/seu-usuario/seu-repositorio.git
+     git clone https://github.com/Julia61/cadastro_login_front.git
    ```
 
 #### 2. Inicie o back-end (Spring Boot) para garantir a integração correta.
