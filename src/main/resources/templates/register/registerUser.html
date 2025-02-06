@@ -50,6 +50,8 @@
 
       if(password !== confirmPassword){
           document.getElementById("password_error").classList.remove("hidden")
+          document.getElementById("password").value = "";
+          document.getElementById("confirmPassword").value = "";
           event.preventDefault();
       }
 

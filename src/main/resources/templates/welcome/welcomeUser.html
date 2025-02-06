@@ -13,10 +13,19 @@
 <body class="bg-[#bde2c7] text-white " style="font-family: 'Sour Gummy', serif;">
 
 <header class="bg-[#6fa376] p-4 rounded-b-lg">
-    <div class="flex items-center ">
-        <span class="p-4"><img src="https://cadastro-login-front.onrender.com/images/avatar.png" alt="Imagem fofa" class="w-10 h-10 rounded-full"></span><p id="bemVindo" class="text-xl font-light tracking-wider text-white" style="text-shadow: 2px 1px 0px black;">Bem-vindo,<p></p><span th:text="${user.usuario}" class="ml-2 text-xl" style="text-shadow: 2px 1px 0px black;"></span>
+    <div class="flex items-center justify-between">
+        <div class="flex items-center">
+            <span class="p-4">
+                <img src="https://cadastro-login-front.onrender.com/images/avatar.png" alt="Imagem fofa" class="w-10 h-10 rounded-full">
+            </span>
+            <p id="bemVindo" class="text-xl font-light tracking-wider text-white" style="text-shadow: 2px 1px 0px black;">Bem-vindo,</p>
+            <span th:text="${user.usuario}" class="ml-2 text-xl" style="text-shadow: 2px 1px 0px black;"></span>
+        </div>
+
+        <a href="/user/login" class="text-white hover:text-green-900 bg-green-800 rounded p-1 shadow-md" >Logout</a>
     </div>
 </header>
+
 
 <main class="p-6 bg-[#9AC4A5] w-2/4  max-w-4xl m-auto shadow-2xl m-auto mt-10 mb-10 rounded-xl" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.532);">
     <h1 class="text-3xl font-bold mb-4" style="text-shadow: 2px 1px 0px black;">A Importância da Prática para o Aprendizado do Cérebro</h1>
