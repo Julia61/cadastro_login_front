@@ -1,6 +1,5 @@
 # Front-end do Projeto de Cadastro e Login
 
-## Visão Geral
 
 Este repositório contém o código front-end para a aplicação de Cadastro e Login. O projeto utiliza HTML, Thymeleaf, Tailwind CSS para estilização e JavaScript para validação de formulários. Ele está integrado com um back-end desenvolvido em Spring Boot, que gerencia a autenticação e persistência de usuários.
 
